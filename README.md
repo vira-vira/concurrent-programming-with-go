@@ -12,11 +12,12 @@ What I will learn:
 - Parallelism (execute multiple task simultaneously)
 
 ### Threads vs Goroutines
+
 | Thread| Goroutines|
 |-------|:----------|
 | Have own execution stack| Have own execution stack|
 | Fixed stack space(around 1 MB)| Variable stack space (starts @2 KB)|
-| Managed by OS| Managed by Goroutine|
+| Managed by OS| Managed by Go runtime|
 
 ### Working with Goroutines
 - Enable concurrent programming
