@@ -21,8 +21,27 @@ What I will learn:
 
 ### Working with Goroutines
 - Enable concurrent programming
-### The Sync Package
+### The Sync Package ([golang.org/pkg/sync/](golang.org/pkg/sync/))
 - Allow goroutines to coordinate their work
 
+
+#### Challenges with Concurrency
+- Coordinate tasks
+    - Waitgroups
+- Shared Memory
+    - Mutexes
+
+#### Waitgroups
+A WaitGroup waits for a collection of goroutines to finish.
+
+#### Mutexes
+A mutual exclusion lock.
+
+A tool to detect race conditions:
+```zsh
+ go run --race .
+ ```
+- Sync.Mutex
+- Sync.RWMutex
 ### Channels
 - Provide a safe way for goroutines to communicate
